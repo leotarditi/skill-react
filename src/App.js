@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Progress from './components/Progress';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>React Skill Progress</h1>
+      <Progress done="70" skill="HTML" />
+      <Progress done="70" skill="CSS" />
+      <Progress done="60" skill="Javascript" />
+      <Progress done="60" skill="Java" />
+      <Progress done="50" skill="Python" />
+    </>
   );
 }
 
